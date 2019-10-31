@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-
+import Type from './App.js';
+import './index.css';
 
 
 
@@ -68,13 +69,93 @@ ReactDOM.render(<h1>variables usind direct method {2+1+3-1}</h1>, document.getEl
 
 
 //class components
-class Car extends React.Components{
+class Car extends React.Component{
   constructor(){
     super();
     this.state={color:"Kshay"};
   }
   render() {
-    return<h1> my name is A{this.state.color} my  gfriend name is g</h1>;
+    return<h1> my name is A{this.state.color} </h1>;
   }
 }
 ReactDOM.render(<Car />,document.getElementById('classess'));
+
+//props state
+//
+class Test extends React.Component{
+ render(){
+    return <h2> my Aim to invert some new {this.props.color} </h2>;
+  }
+}
+ReactDOM.render(<Test color="TECHNOLOGY" />,document.getElementById('Test'));
+
+//components in components
+
+class Try1 extends React.Component{
+  render(){
+    return <h1>first</h1>;
+  }
+}
+
+class Try2 extends React.Component{
+  render(){
+    return(
+    <div>
+    <Try1 />
+    <h2>second</h2>
+    </div>);
+  }
+}
+class Try3 extends React.Component{
+  render(){
+    return(
+    <div>
+    <Try2 />
+    <h3>three</h3>
+    </div>);
+  }
+}
+class Try4 extends React.Component{
+  render(){
+    return(
+    <div>
+    <Try3 />
+    <h4>Four</h4>
+    </div>);
+  }
+}
+
+
+
+class Final extends React.Component{
+  render(){
+    return(
+<div>
+    <Try4 />
+<h5>Finally inheritance components in Component complete</h5>
+</div>
+    );
+  }
+}
+
+ReactDOM.render(<Final />,document.getElementById('Try'));
+
+
+//other files values
+
+ReactDOM.render(<Type />,document.getElementById('Type'));
+
+//button
+
+class Button extends React.Component{
+shoot() {
+  alert("Hello Button function!");
+}
+render(){
+return(
+  <button onClick={this.shoot}>Tclick!</button>
+);
+}
+}
+
+ReactDOM.render(<Button />, document.getElementById('button'));
