@@ -1,0 +1,61 @@
+body
+{
+	background-image: url('bmw.jpg');
+	background-size: cover;
+	color: white;
+
+
+  font-family: Arial;
+  position: absolute;
+ 
+}
+.container{
+width: 99%;
+  position: fixed;
+  top:65px;
+  border-color: aqua;
+border-style: ridge;
+  display:grid;
+grid-template-columns:1fr 1fr 1fr 1fr ;
+grid-gap:0.1rem 0.2vw;
+
+
+}
+div{
+
+	 border-color: white;
+border-style: groove;
+
+	
+}
+nav{
+	width: 99%;
+	position: fixed;
+  margin: 0px;
+	overflow: hidden;
+   border-color: white;
+border-style: groove;
+	
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding:0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+   display: block;
+  color: white;
+  text-align: center;
+  padding: 15px 67px;
+  text-decoration: none;
+}
+
+
+
+li:hover {
+  background-color: lightgreen;
+}
