@@ -9,7 +9,7 @@ import ReactDOM from 'react-dom';
 //function components
 
 function Cars() {
-  return <h2>function components</h2>;
+  return <h2>function components {1+1} nd topic </h2>;
 }
 
 ReactDOM.render(<Cars />,document.getElementById('classes'));
@@ -64,7 +64,7 @@ ReactDOM.render(myelement, document.getElementById('roots'));
 
 ReactDOM.render(come, document.getElementById('root'));
 //variables usind direct method
-ReactDOM.render(<h1>Elemenrssfjsjf</h1>, document.getElementById('sandy'));
+ReactDOM.render(<h1>variables usind direct method {2+1+3-1}</h1>, document.getElementById('sandy'));
 
 
 //class components
