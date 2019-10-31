@@ -1,6 +1,21 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
+
+
+
+
+
+//function components
+
+function Cars() {
+  return <h2>function components</h2>;
+}
+
+ReactDOM.render(<Cars />,document.getElementById('classes'));
+
+
+//variables 
 var navbar=(
 <ul>
 <li>Atest</li>
@@ -50,3 +65,16 @@ ReactDOM.render(myelement, document.getElementById('roots'));
 ReactDOM.render(come, document.getElementById('root'));
 //variables usind direct method
 ReactDOM.render(<h1>Elemenrssfjsjf</h1>, document.getElementById('sandy'));
+
+
+//class components
+class Car extends React.Components{
+  constructor(){
+    super();
+    this.state={color:"Kshay"};
+  }
+  render() {
+    return<h1> my name is A{this.state.color} my  gfriend name is g</h1>;
+  }
+}
+ReactDOM.render(<Car />,document.getElementById('classess'));
