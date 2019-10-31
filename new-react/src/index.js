@@ -3,15 +3,16 @@ import ReactDOM from 'react-dom';
 
 var navbar=(
 <ul>
-<li><a>Atest</a></li>
-<li><a>Btest</a></li>
-<li><a>Ctest</a></li>
-<li><a>Dtest</a></li>
-<li><a>Etest</a></li>
+<li>Atest</li>
+<li>Btest</li>
+<li>Ctest</li>
+<li>Dtest</li>
+<li>Etest</li>
 </ul>
   );
 
-
+var input= <input type="text"/>;
+ReactDOM.render(input, document.getElementById('inputbox'));
 
 //variables usind var
 var come = (
