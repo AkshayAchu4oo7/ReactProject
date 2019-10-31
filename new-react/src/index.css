@@ -13,12 +13,12 @@ body
 }
 .container{
 width: 99%;
-  position: fixed;
+
   top:65px;
   border-color: aqua;
 border-style: ridge;
   display:grid;
-grid-template-columns:1fr 1fr 1fr 1fr ;
+grid-template-columns:1fr 1fr 1fr 1fr 1fr;
 grid-gap:0.1rem 0.2vw;
 
 
@@ -34,7 +34,7 @@ display:block;
 }
 nav{
 	width: 99%;
-	position: fixed;
+	
   margin: 0px;
 	overflow: hidden;
    border-color: white;
@@ -66,3 +66,18 @@ li:hover {
 div:hover{
 border-color: aqua;
 }
+
+@media screen and (max-width: 600px) {
+.container{
+  display:grid;
+grid-template-columns:1fr 1fr 1fr;
+width: 99%;
+
+  top:65px;
+  border-color: aqua;
+border-style: ridge;
+
+}
+
+
+  }
