@@ -11,7 +11,7 @@ body
   height: 100%;
  
 }
-.container{
+div.container{
 width: 99%;
 
   top:65px;
@@ -34,7 +34,7 @@ display:block;
 }
 nav{
 	width: 99%;
-	
+	height: auto;
   margin: 0px;
 	overflow: hidden;
    border-color: white;
@@ -67,14 +67,26 @@ div:hover{
 border-color: aqua;
 }
 
-@media screen and(max-width:600px){
-  .container{
-  display:grid;
-grid-template-columns:1fr 1fr;
-width: 99%;
+@media screen and (max-width: 600px){
 
+  div.container{
+  display:grid;
+grid-template-columns:1fr;
+width: 99%;
+cursor: cell;
   top:65px;
   border-color: red;
 border-style: ridge;
 }
+
+
+li {
+ 
+   display: block;
+  color: red;
+cursor: progress;
+  padding: 10px 17px;
+  text-decoration: none;
+}
+
 }
