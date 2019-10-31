@@ -67,17 +67,14 @@ div:hover{
 border-color: aqua;
 }
 
-@media screen and (max-width: 600px) {
-.container{
+@media screen and(max-width:600px){
+  .container{
   display:grid;
-grid-template-columns:1fr 1fr 1fr;
+grid-template-columns:1fr 1fr;
 width: 99%;
 
   top:65px;
-  border-color: aqua;
+  border-color: red;
 border-style: ridge;
-
 }
-
-
-  }
+}
