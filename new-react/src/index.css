@@ -11,6 +11,23 @@ body
   height: 100%;
  
 }
+input{
+  padding:20px 30px;
+  border-radius: 30px;
+font-family: cursive;
+font-size: larger;
+  border-color: aqua;
+}
+
+button{
+   padding:20px 30px;
+border-radius: 30px;
+  border-color: aqua;
+  font-family: fantasy;
+  color: white;
+  background-color: black;
+  font-size: 30px;
+}
 div.container{
 width: 99%;
 
@@ -37,7 +54,7 @@ nav{
 	height: auto;
   margin: 0px;
 	overflow: hidden;
-   border-color: white;
+   border-color: aqua;
 border-style: groove;
 	
 }
@@ -52,7 +69,7 @@ ul {
 li {
   float: left;
    display: block;
-  color: white;
+  color: aqua;
   text-align: center;
   padding: 15px 67px;
   text-decoration: none;
@@ -61,10 +78,11 @@ li {
 
 
 li:hover {
-  background-color: lightgreen;
+  background-color: black;
 }
 div:hover{
 border-color: aqua;
+
 }
 
 @media screen and (max-width: 600px){
@@ -75,7 +93,7 @@ grid-template-columns:1fr;
 width: 99%;
 cursor: cell;
   top:65px;
-  border-color: red;
+  border-color: white;
 border-style: ridge;
 }
 
@@ -83,10 +101,11 @@ border-style: ridge;
 li {
  
    display: block;
-  color: red;
+  color: aqua;
 cursor: progress;
   padding: 10px 17px;
   text-decoration: none;
 }
+
 
 }

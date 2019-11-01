@@ -26,9 +26,38 @@ var navbar=(
 <li>Etest</li>
 </ul>
   );
+//test
 
-var input= <input type="text"/>;
-ReactDOM.render(input, document.getElementById('inputbox'));
+
+class MyForm extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = { username: '' };
+  }
+  myChangeHandler = (event) => {
+    this.setState({username: event.target.value});
+  }
+  render() {
+    return (
+      <form>
+      <h1>Hello {this.state.username}</h1>
+      <p>Enter your name:</p>
+      <input
+        type='text'
+        onChange={this.myChangeHandler}
+      />
+      </form>
+    );
+  }
+}
+
+ReactDOM.render(<MyForm />, document.getElementById('inputbox'));
+
+
+//test
+
+//var input= <input type="text"/>;
+//ReactDOM.render(input, document.getElementById('inputbox'));
 
 //variables usind var
 var come = (
@@ -159,3 +188,15 @@ return(
 }
 
 ReactDOM.render(<Button />, document.getElementById('button'));
+//second
+
+class New extends React.Component{
+  render(){
+    return(<div>
+    <h1>welcome back</h1>
+    <h1>Akshay</h1>
+    <h2>this is he place to develop new required application</h2>
+    </div>);
+  }
+}
+ReactDOM.render(<New />,document.getElementById('welcome'));
