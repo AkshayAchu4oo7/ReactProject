@@ -1,19 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Type from './App.js';
 import './index.css';
+import App from './App';
 
 
+ReactDOM.render(<App />, document.getElementById('Newly'));
 
 
-
-//function components
-
-function Cars() {
-  return <h2>function components {1+1} nd topic </h2>;
-}
-
-ReactDOM.render(<Cars />,document.getElementById('classes'));
 
 
 //variables 
@@ -24,10 +17,27 @@ var navbar=(
 <li>Ctest</li>
 <li>Dtest</li>
 <li>Etest</li>
+
 </ul>
   );
-//test
+  ReactDOM.render(navbar,document.getElementById('nav'));
 
+
+  // function components
+
+// function Cars() {
+//   return <h2>function components {1+1} nd topic </h2>;
+// }
+
+// ReactDOM.render(<Cars />,document.getElementById('classes'));
+// //
+
+
+
+
+
+//test
+/* 
 
 class MyForm extends React.Component {
   constructor(props) {
@@ -86,8 +96,8 @@ const myelement = (
 
 );
 
-ReactDOM.render(navbar,document.getElementById('nav'));
-ReactDOM.render(test,document.getElementById('do'));
+
+ReactDOM.render(test,document.getElementById('dos'));
 ReactDOM.render(myelement, document.getElementById('roots'));
 
 
@@ -172,7 +182,7 @@ ReactDOM.render(<Final />,document.getElementById('Try'));
 
 //other files values
 
-ReactDOM.render(<Type />,document.getElementById('Type'));
+// ReactDOM.render(<Type />,document.getElementById('Type'));
 
 //button
 
@@ -289,4 +299,4 @@ class Child extends React.Component {
   }
 }
 
-ReactDOM.render(<Container />, document.getElementById('updatedbutton'));
+ReactDOM.render(<Container />, document.getElementById('updatedbutton')); */
